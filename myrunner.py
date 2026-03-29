@@ -69,7 +69,7 @@ def main():
         if len(all_rewards) > 0:
             agent.update(all_rewards, all_log_probs, all_values, all_next_values, all_dones)
                 
-        if (episode + 1) % 50 == 0:
+        if (episode + 1) % 100 == 0:
             print(f"Episode {episode + 1} finished. Last episode cumulative reward approx: {final_reward}")
 
     # Show a sample run in human mode

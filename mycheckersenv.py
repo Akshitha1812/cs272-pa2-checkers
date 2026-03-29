@@ -80,6 +80,7 @@ class raw_env(AECEnv):
         self.truncations = {i: False for i in self.agents}
         self.infos = {i: {} for i in self.agents}
         self.num_moves = 0
+        self.last_capture_move = 0
         
         # 6x6 Checkers Setup
         # P1 (x) is at the top (rows 0, 1)
@@ -168,8 +169,11 @@ class raw_env(AECEnv):
             self._was_dead_step(action)
             return
 
-        # CLEAR instantaneous step rewards so they don't compound exponentially
+        # CLEAR instantaneous step rewards so they don't compound
         self.rewards = {i: 0 for i in self.agents}
+        
+        # Small step penalty to encourage faster completion
+        self.rewards[self.agent_selection] -= 0.01
 
         agent = self.agent_selection
         mask = self.observe(agent)["action_mask"]
@@ -212,8 +216,9 @@ class raw_env(AECEnv):
             mid_r = (from_sq // 6 + to_sq // 6) // 2
             mid_c = (from_sq % 6 + to_sq % 6) // 2
             self.board[mid_r * 6 + mid_c] = EMPTY
-            self.rewards[agent] += 1  # Reward for capture
-            self.rewards[self.agents[1 - self.agents.index(agent)]] -= 1
+            self.rewards[agent] += 1.0  # Reward for capture
+            self.rewards[self.agents[1 - self.agents.index(agent)]] -= 1.0
+            self.last_capture_move = self.num_moves
 
         # Check multi-jump
         self.mandatory_jumper = None
@@ -231,7 +236,8 @@ class raw_env(AECEnv):
             self.agent_selection = self._agent_selector.next()
 
         self.num_moves += 1
-        if self.num_moves >= 200:
+        # Truncate if too many moves or if no capture for a long time (Draw rule)
+        if self.num_moves >= 200 or (self.num_moves - self.last_capture_move) >= 60:
             self.truncations = {i: True for i in self.agents}
 
         # Check win/loss (no pieces or no legal moves)
