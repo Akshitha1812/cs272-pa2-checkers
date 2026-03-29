@@ -12,7 +12,7 @@ During self-play, agents optimize the network after each episode by maximizing t
 
 ## 3. Training & Final Cumulative Reward
 **Final Cumulative Reward of Sample Run:**
-Sample Run Cumulative Reward -> Player 1 (x): 124, Player 2 (o): -137
+Sample Run Cumulative Reward -> Player 1 (x): -22.909999999999997, Player 2 (o): 18.95
 
 ## 4. Sample Run
 ```text
