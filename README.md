@@ -22,14 +22,4 @@ The action space is a `Discrete(1296)` space. Actions represent moves from any o
 - **Termination:** The game terminates when one player loses all their pieces or has no remaining legal moves available.
 - **Truncation:** The environment prevents illegal moves by strictly applying the `action_mask`. If the agent attempts a move outside the mask, standard wrappers will catch it or heavily penalize the agent.
 
----
 
-## Agent Logic & Function Approximation (For PDF)
-**Agent Logic & Function Approximation (118 words)**
-
-The Actor-Critic agent uses a shared Multi-Layer Perceptron (MLP) with two hidden layers (128 units each) to extract board features. `torch` (2.8.0) is used for the function approximation. 
-The shared trunk feeds into two independent heads: 
-1. **Actor Head:** Outputs a 1296-dimensional tensor representing the logit probabilities for each possible move. Invalid moves are masked by replacing their logits with a large negative number before applying Softmax, generating a valid Categorical distribution for action sampling.
-2. **Critic Head:** Outputs a single scalar evaluating the state's value. 
-
-During self-play, agents optimize the network after each episode by maximizing the log probability of actions scaled by the advantage (Return - Critic Value), while the Critic is optimized using the Smooth L1 Loss against the empirical return.
