@@ -56,7 +56,392 @@ x . . . x .
 o . o . o . 
 
 
-... [190+ intermediate turns omitted for brevity] ...
+player_0's turn:
+. x . x . x 
+x . . . x . 
+. . . . . . 
+. . o . . . 
+. . . o . x 
+o . o . o . 
+
+
+player_1's turn:
+. x . x . x 
+x . . . . . 
+. . . . . x 
+. . o . . . 
+. . . o . x 
+o . o . o . 
+
+
+player_0's turn:
+. x . x . x 
+x . . . . . 
+. . . . . x 
+. . o . . . 
+. o . o . x 
+. . o . o . 
+
+
+player_1's turn:
+. x . x . . 
+x . . . x . 
+. . . . . x 
+. . o . . . 
+. o . o . x 
+. . o . o . 
+
+
+player_0's turn:
+. x . x . . 
+x . . . x . 
+. o . . . x 
+. . . . . . 
+. o . o . x 
+. . o . o . 
+
+
+player_0's turn:
+. x . x . . 
+. . . . x . 
+. . . . . x 
+. . x . . . 
+. o . o . x 
+. . o . o . 
+
+
+player_1's turn:
+. x . x . . 
+. . . . x . 
+. . . . . x 
+. . . . . . 
+. . . o . x 
+X . o . o . 
+
+
+player_0's turn:
+. x . x . . 
+. . . . x . 
+. . . . . x 
+. . o . . . 
+. . . . . x 
+X . o . o . 
+
+
+player_1's turn:
+. x . x . . 
+. . . . . . 
+. . . x . x 
+. . o . . . 
+. . . . . x 
+X . o . o . 
+
+
+player_0's turn:
+. x . x . . 
+. . . . o . 
+. . . . . x 
+. . . . . . 
+. . . . . x 
+X . o . o . 
+
+
+player_1's turn:
+. x . . . . 
+. . x . o . 
+. . . . . x 
+. . . . . . 
+. . . . . x 
+X . o . o . 
+
+
+player_0's turn:
+. x . . . . 
+. . x . o . 
+. . . . . x 
+. . . . . . 
+. o . . . x 
+X . . . o . 
+
+
+player_1's turn:
+. x . . . . 
+. . x . o . 
+. . . . . x 
+. . X . . . 
+. . . . . x 
+. . . . o . 
+
+
+player_0's turn:
+. x . . . O 
+. . x . . . 
+. . . . . x 
+. . X . . . 
+. . . . . x 
+. . . . o . 
+
+
+player_1's turn:
+. x . . . O 
+. . . . . . 
+. x . . . x 
+. . X . . . 
+. . . . . x 
+. . . . o . 
+
+
+player_0's turn:
+. x . . . . 
+. . . . O . 
+. x . . . x 
+. . X . . . 
+. . . . . x 
+. . . . o . 
+
+
+player_1's turn:
+. x . . . . 
+. . . . O . 
+. . . . . x 
+x . X . . . 
+. . . . . x 
+. . . . o . 
+
+
+player_0's turn:
+. x . . . O 
+. . . . . . 
+. . . . . x 
+x . X . . . 
+. . . . . x 
+. . . . o . 
+
+
+player_1's turn:
+. x . . . O 
+. . . . . . 
+. X . . . x 
+x . . . . . 
+. . . . . x 
+. . . . o . 
+
+
+player_0's turn:
+. x . . . O 
+. . . . . . 
+. X . . . x 
+x . . . . . 
+. . . o . x 
+. . . . . . 
+
+
+player_1's turn:
+. x . . . O 
+X . . . . . 
+. . . . . x 
+x . . . . . 
+. . . o . x 
+. . . . . . 
+
+
+player_0's turn:
+. x . . . . 
+X . . . O . 
+. . . . . x 
+x . . . . . 
+. . . o . x 
+. . . . . . 
+
+
+player_1's turn:
+. . . . . . 
+X . x . O . 
+. . . . . x 
+x . . . . . 
+. . . o . x 
+. . . . . . 
+
+
+player_0's turn:
+. . . O . . 
+X . x . . . 
+. . . . . x 
+x . . . . . 
+. . . o . x 
+. . . . . . 
+
+
+player_1's turn:
+. . . O . . 
+X . . . . . 
+. x . . . x 
+x . . . . . 
+. . . o . x 
+. . . . . . 
+
+
+player_0's turn:
+. . . O . . 
+X . . . . . 
+. x . . . x 
+x . . . o . 
+. . . . . x 
+. . . . . . 
+
+
+player_1's turn:
+. . . O . . 
+X . . . . . 
+. x . . . . 
+x . . . . . 
+. . . x . x 
+. . . . . . 
+
+
+player_0's turn:
+. . . . . . 
+X . O . . . 
+. x . . . . 
+x . . . . . 
+. . . x . x 
+. . . . . . 
+
+
+player_1's turn:
+. . . . . . 
+X . O . . . 
+. . . . . . 
+x . x . . . 
+. . . x . x 
+. . . . . . 
+
+
+player_0's turn:
+. . . . . . 
+X . . . . . 
+. O . . . . 
+x . x . . . 
+. . . x . x 
+. . . . . . 
+
+
+player_1's turn:
+. . . . . . 
+X . . . . . 
+. O . . . . 
+x . x . . . 
+. . . x . . 
+. . . . X . 
+
+
+player_0's turn:
+. . . . . . 
+X . O . . . 
+. . . . . . 
+x . x . . . 
+. . . x . . 
+. . . . X . 
+
+
+player_1's turn:
+. . . . . . 
+X . O . . . 
+. . . . . . 
+x . x . . . 
+. . . . . . 
+. . X . X . 
+
+
+player_0's turn:
+. O . . . . 
+X . . . . . 
+. . . . . . 
+x . x . . . 
+. . . . . . 
+. . X . X . 
+
+
+player_1's turn:
+. O . . . . 
+X . . . . . 
+. . . . . . 
+x . x . . . 
+. . . . . X 
+. . X . . . 
+
+
+player_0's turn:
+. . . . . . 
+X . O . . . 
+. . . . . . 
+x . x . . . 
+. . . . . X 
+. . X . . . 
+
+
+player_1's turn:
+. . . . . . 
+X . O . . . 
+. . . . . . 
+. . x . . . 
+. x . . . X 
+. . X . . . 
+
+
+player_0's turn:
+. O . . . . 
+X . . . . . 
+. . . . . . 
+. . x . . . 
+. x . . . X 
+. . X . . . 
+
+
+player_1's turn:
+. O . . . . 
+. . . . . . 
+. X . . . . 
+. . x . . . 
+. x . . . X 
+. . X . . . 
+
+
+player_0's turn:
+. . . . . . 
+O . . . . . 
+. X . . . . 
+. . x . . . 
+. x . . . X 
+. . X . . . 
+
+
+player_1's turn:
+. . . . . . 
+O . . . . . 
+. X . . . . 
+. . x . . . 
+. . . . . X 
+X . X . . . 
+
+
+player_0's turn:
+. O . . . . 
+. . . . . . 
+. X . . . . 
+. . x . . . 
+. . . . . X 
+X . X . . . 
+
+
+player_1's turn:
+. O . . . . 
+. . . . . . 
+. X . . . . 
+. . x . . . 
+. . . X . X 
+X . . . . . 
+
 
 player_0's turn:
 . . . . . . 
