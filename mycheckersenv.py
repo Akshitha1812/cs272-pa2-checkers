@@ -126,8 +126,9 @@ class raw_env(AECEnv):
         forward_dir = 1 if is_p1 else -1
         
         for i in range(36):
-            if self.mandatory_jumper is not None and i != self.mandatory_jumper:
-                continue
+            if self.mandatory_jumper is not None and self.board[self.mandatory_jumper] in pieces:
+                if i != self.mandatory_jumper:
+                    continue
                 
             if self.board[i] in pieces:
                 r, c = i // 6, i % 6
