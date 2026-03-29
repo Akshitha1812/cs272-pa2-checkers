@@ -168,6 +168,9 @@ class raw_env(AECEnv):
             self._was_dead_step(action)
             return
 
+        # CLEAR instantaneous step rewards so they don't compound exponentially
+        self.rewards = {i: 0 for i in self.agents}
+
         agent = self.agent_selection
         mask = self.observe(agent)["action_mask"]
         if mask[action] == 0:
