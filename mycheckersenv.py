@@ -262,3 +262,5 @@ class raw_env(AECEnv):
                 self.rewards["player_1"] -= 10
             
         self._accumulate_rewards()
+   
+ 
